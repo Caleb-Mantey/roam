@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "348411680471",
+    "firebase_url": "https://complaint-56a42.firebaseio.com",
+    "project_id": "complaint-56a42",
+    "storage_bucket": "complaint-56a42.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:348411680471:android:a67da1d2f898fa6bd2c292",
+        "android_client_info": {
+          "package_name": "com.roam"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "348411680471-guae48ag58246qcu1dlbmrjiueh57kcf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBuSCS_UIrJg9550L3jVlPHwEEKoTbSCpE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "348411680471-guae48ag58246qcu1dlbmrjiueh57kcf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:348411680471:android:f2c8c55d3447384dd2c292",
+        "android_client_info": {
+          "package_name": "com.sokoaerial.qr_scanner"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "348411680471-guae48ag58246qcu1dlbmrjiueh57kcf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBuSCS_UIrJg9550L3jVlPHwEEKoTbSCpE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "348411680471-guae48ag58246qcu1dlbmrjiueh57kcf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:348411680471:android:23b009e3a3e319edd2c292",
+        "android_client_info": {
+          "package_name": "com.sokoaerial.security_logger_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "348411680471-guae48ag58246qcu1dlbmrjiueh57kcf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBuSCS_UIrJg9550L3jVlPHwEEKoTbSCpE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "348411680471-guae48ag58246qcu1dlbmrjiueh57kcf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
