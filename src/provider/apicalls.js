@@ -3,7 +3,7 @@ import qs from 'qs';
 import mergeJSON from 'mergejson';
 
 
-const url = "http://api.roamgrp.com/api.php";
+const url = "https://api.roamgrp.com/api.php";
 // const url = "http://192.168.1.9/roam_api/api.php";
 
 const request_head = {

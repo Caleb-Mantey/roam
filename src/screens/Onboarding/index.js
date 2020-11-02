@@ -323,7 +323,7 @@ export default class OnBoarding extends Component {
         this.my_pageindex = 0;
         console.log(this.my_pageindex);
         ToastAndroid.show("Logging you in...", ToastAndroid.SHORT);
-        // this.props.navigation.navigate('Homescreen');
+        this.props.navigation.navigate('Homescreen');
       }
       
     })      

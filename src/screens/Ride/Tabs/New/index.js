@@ -8,7 +8,7 @@ import apicalls from '../../../../provider/apicalls';
 export default class New extends Component {
   constructor(props) {
     super(props);
-    state = {
+    this.state = {
       results: null
     }
   }
@@ -25,7 +25,7 @@ export default class New extends Component {
         this.setState({results: data.data});
       }else if(data.msg == "error"){
         console.log("Error", data.msg)
-      }     
+      }    
     })      
 
   }
@@ -44,29 +44,22 @@ export default class New extends Component {
       <View style={{flex: 1, backgroundColor: 'white', height: 1400}}>
         <ScrollView style={{ height: 1400}}>
          
-          <Ridedetails
+         {this.state.results ? this.state.results.map(data => { 
+           <Ridedetails
             carimage={require('../../../../images/deliverymotor.png')}
-            origin="North Kaneshie, Accra"
-            destination="Kantamanto, Accra"
-            packagetype="Documents"
-            packagequantity="4"
-            price="₵10.00"
-            date="12/08/2020"
-            time="8:58 AM"
+            origin={data.REQ_LOCATION_FROM}
+            destination={data.REQ_LOCATION}
+            packagetype={data.REQ_ITEMS}
+            packagequantity="1"
+            price={data.REQ_TOTAL_AMOUNT}
+            date={data.REQ_DATE}
+            time={data.REQ_PICKUP_TIME}
             navigation={this.props.navigation}
+            data = {data}
           />
-                  
-          <Ridedetails
-            carimage={require('../../../../images/deliverymotor.png')}
-            origin="North Kaneshie, Accra"
-            destination="Kantamanto, Accra"
-            packagetype="Documents"
-            packagequantity="4"
-            price="₵10.00"
-            date="12/08/2020"
-            time="8:58 AM"
-            navigation={this.props.navigation}
-          />
+         })  : <View style={{flexDirection: 'column', justifyContent: 'center',alignSelf: 'center', height: 300}}>
+                <Text style={{fontSize: 26}}>No Request Found</Text>
+            </View>}
 
         </ScrollView>
       </View>

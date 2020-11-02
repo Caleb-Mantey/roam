@@ -15,7 +15,7 @@ import apicalls from '../../../../provider/apicalls';
 export default class Cancelled extends Component {
   constructor(){
     super();
-    state = {
+    this.state = {
       results: null
     }
   }
@@ -44,13 +44,22 @@ export default class Cancelled extends Component {
     return (
       <View style={{flex: 1, backgroundColor: 'white'}}>
         <ScrollView>
-          <Ridedetails
-            carimage={require('../../../../images/car.jpg')}
-            cartype="Lyft"
-            availablepersons="6"
-            price="US $ 19.01"
-            time="8:58 PM"
+        {this.state.results ? this.state.results.map(data => { 
+           <Ridedetails
+            carimage={require('../../../../images/deliverymotor.png')}
+            origin={data.REQ_LOCATION_FROM}
+            destination={data.REQ_LOCATION}
+            packagetype={data.REQ_ITEMS}
+            packagequantity="1"
+            price={data.REQ_TOTAL_AMOUNT}
+            date={data.REQ_DATE}
+            time={data.REQ_PICKUP_TIME}
+            navigation={this.props.navigation}
+            data = {data}
           />
+         })  : <View style={{flexDirection: 'column', justifyContent: 'center',alignSelf: 'center', height: 300}}>
+                <Text style={{fontSize: 26}}>No Request Found</Text>
+            </View>}
           {/* <Footerdetails
             iconname1="credit-card-alt"
             textname1="Add payment"
